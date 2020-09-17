@@ -1,0 +1,610 @@
+/*
+    DEMO STYLE
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #edf1ff;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    position: fixed;
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 888;
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    z-index: 999;
+    background: #47CCD1;
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #45bbbf;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss:hover {
+    background: #fff;
+    color: #45bbbf;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #47CCD1;
+}
+
+#sidebar ul.components {
+    padding:0;
+    border-bottom: 1px solid #47CCD1;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: #fff;
+}
+
+#sidebar ul li a:hover {
+    color: #47CCD1;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #47CCD1;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #45bbbf;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #45bbbf !important;
+    color: #fff !important;
+}
+
+.btnmenu{
+    justify-content: flex-start !important;
+}
+
+.butmenumargen{
+    margin: 5px;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    transition: all 0.3s;
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+
+/* logotipo del sistema */
+
+.logosystem{
+    max-height: 80px;
+}
+
+/* Login */
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+
+/* =====================================
+Css para boton y form campos
+======================================*/
+.bordecol{
+    border: 1px solid #47CCD1 !important;
+}
+  
+  .bordecol:focus {
+    border-color: #47CCD1 !important;
+    box-shadow: 0 0 0 0.2rem rgba(71, 204, 209, 0.25) !important;
+}
+  
+  .btnnormal{
+    color: #fff !important;
+    background-color: #47CCD1 !important;
+    border-color: #47CCD1 !important;
+  }
+  
+  .btnnormal:hover{
+    color: #fff;
+    background-color: #45bbbf !important;
+    border-color: #45bbbf !important;
+  }
+
+  .btnnormal:focus{
+    color: #fff;
+    background-color: #45bbbf !important;
+    border-color: #45bbbf !important;
+  }
+
+/* =====================================
+barra de busqueda
+======================================*/
+
+.barrabusqueda{
+    padding: 1rem;
+    background: #9ec3e361;
+    border-radius: 10px;
+}
+
+.titlebarra{
+    color: #3b4d5a;
+    margin-bottom: 15px;
+}
+
+/* =====================================
+iconos de acceso
+======================================*/
+.icoboxx{
+    padding: 10px;
+    background: #fff;
+    color: #47CCD1;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    width: 100px;
+    -webkit-box-shadow: 0px 3px 7px 0px rgba(209, 220, 255, 1);
+    -moz-box-shadow: 0px 3px 7px 0px rgba(209, 220, 255,1);
+    box-shadow: 0px 3px 7px 0px rgba(209, 220, 255, 1);
+}
+
+.icoboxx:hover{
+    padding: 10px;
+    background: #47CCD1;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    width: 100px;
+    -webkit-box-shadow: 0px 3px 7px 0px rgba(209, 220, 255, 1);
+    -moz-box-shadow: 0px 3px 7px 0px rgba(209, 220, 255,1);
+    box-shadow: 0px 3px 7px 0px rgba(209, 220, 255, 1);
+}
+
+.textboxx{
+    font-size: 12px;
+}
+
+/* =====================================
+Css para card
+======================================*/
+
+
+.card{
+    margin: 10px;
+    -webkit-box-shadow: 0px 3px 7px 0px rgba(209, 220, 255, 1);
+    -moz-box-shadow: 0px 3px 7px 0px rgba(209, 220, 255,1);
+    box-shadow: 0px 3px 7px 0px rgba(209, 220, 255, 1);
+    border: none;
+}
+
+.card-text{
+    margin-bottom: 5px;
+}
+
+.altimagen{
+    width: 100%;
+    min-height: 200px;
+    max-height: 250px;
+}
+
+.staricon{
+    color: #F8E750;
+}
+
+.margcheck{
+    padding-left: 15px;
+}
+
+.contentinfo{
+    background: #c5e5ff;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.horariosdireccion{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #000;
+    display: block;
+}
+
+.btnproveedor{
+    color: #fff;
+    background-color: #47CCD1;
+    border-color: #47CCD1;
+    margin: 5px;
+}
+
+.btnproveedor:hover{
+    color: #fff;
+    background-color: #45bbbf;
+    border-color: #45bbbf;
+}
+
+.btnproveedor:focus{
+    color: #fff;
+    box-shadow: none !important;
+}
+
+.centragaleria{
+    margin-right: auto; 
+    margin-left: auto; 
+    display: block;
+}
+
+.resenacard{
+    border-radius: 1rem !important;
+}
+.page-link{
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #fff;
+    background-color: #47ccd1;
+    border: 1px solid #3ec1c6;
+}
+
+.page-link:hover{
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+    background-color: #45bbbf;
+    border-color: #45bbbf;
+}
+
+.centrarpaginacion{
+    margin-right: auto; 
+    margin-left: auto; 
+    display: block;
+}
+
+.modal-header{
+    background: #47CCD1 !important;
+    color: #fff !important;
+}
+
+.linkregresar{
+    color: #47ccd1;
+}
+
+.linkregresar:hover{
+    color: #45bbbf;
+}
+
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+    padding: 15px 0 !important;
+    background: none;
+    min-height: 40px;
+    margin-top: 85px;
+  }
+  
+  .breadcrumbs h2 {
+    font-size: 28px;
+    font-weight: 300;
+  }
+  
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .breadcrumbs ol li + li {
+    padding-left: 10px;
+  }
+  
+  .breadcrumbs ol li + li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #3c6387;
+    content: "/";
+  }
+  
+  @media (max-width: 768px) {
+    .breadcrumbs .d-flex {
+      display: block !important;
+    }
+    .breadcrumbs ol {
+      display: block;
+    }
+    .breadcrumbs ol li {
+      display: inline-block;
+    }
+  }
+  
+
+.detallecom{
+    background: #c5e5ff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.listcompra{
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    display: block;
+}
+
+.listcompradetalle{
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;
+    display: block;
+}
+
+.mrbot{
+    margin-bottom: 20px;
+}
+
+.selectmetodo{
+    background: #47ccd1;
+    color: #fff;
+}
+
+.selectmetodo:hover{
+    background: #47ccd1;
+    color: #fff;
+}
+
+.asiento{
+    background: #c5e5ff;
+    color: #000;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 12px;
+    width: 100px;
+    margin-right:15px;
+    margin-left: 15px;
+}
+
+
+.iconform{
+    color: #fff !important;
+    background-color: #47ccd1 !important;
+    border: 1px solid #47ccd1 !important;
+}
+
+.fotoperfil{
+    border-radius: 50%;
+    border: 3px solid #fff;
+    width: 150px;
+    height: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.divimagenperfil{
+    padding: 20px;
+}
+
+.ocultarinput{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.file-btn {
+    position: relative;
+}
+
+.addtarjeta{
+    padding: 15px;
+}
+
+.divdatosgenerales{
+    margin-top: 30px;
+}
+
+.centrardatosgenerales{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 1.7em;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.divpromocion{
+    padding: 20px 0px;
+}
+
+/* ===========================
+footer imagen logo de gobierno
+===========================*/
+
+.divfooter {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+  }
+  
+  .footercolor {
+    background-color: #47CCD1;
+    color: #fff;
+  }
+
+  .footer-copyright{
+      background-color: #45bbbf;
+      color: #fff;
+  }
+  
+
+  .listadocompras{
+      padding:20px 0px;
+  }
+
+  .list-group-item{
+      border: 1px solid #edf1ff !important;
+  }
+
+  .scrollenvio{
+    height: 400px;
+    overflow-y: scroll;
+  }
+
+  .divdetalles{
+      padding: 10px;
+  }
+
+  .detalletext{
+      font-size: 14px;
+      display: block;
+  }

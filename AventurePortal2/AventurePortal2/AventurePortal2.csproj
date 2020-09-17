@@ -190,6 +190,24 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\chekoutcompra.cshtml" />
+    <Content Include="Views\Home\compradetalle.cshtml" />
+    <Content Include="Views\Home\consultaproveedor.cshtml" />
+    <Content Include="Views\Home\datosgenerales.cshtml" />
+    <Content Include="Views\Home\evento.cshtml" />
+    <Content Include="Views\Home\login.cshtml" />
+    <Content Include="Views\Home\misboletos.cshtml" />
+    <Content Include="Views\Home\miscompras.cshtml" />
+    <Content Include="Views\Home\mispromociones.cshtml" />
+    <Content Include="Views\Home\misreservaciones.cshtml" />
+    <Content Include="Views\Home\misservicios.cshtml" />
+    <Content Include="Views\Home\mistarjetas.cshtml" />
+    <Content Include="Views\Home\pincipal.cshtml" />
+    <Content Include="Views\Home\productosfisicos.cshtml" />
+    <Content Include="Views\Home\promocion.cshtml" />
+    <Content Include="Views\Home\registro.cshtml" />
+    <Content Include="Views\Home\resultados.cshtml" />
+    <Content Include="Views\Home\terminos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

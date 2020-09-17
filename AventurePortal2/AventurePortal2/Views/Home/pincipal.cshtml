@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Aventure</title>
+
+    <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+   
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/bootstrap-4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/glider.min.css">
+    <link rel="stylesheet" href="assets/css/promocionescarrusel.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+ 
+</head>
+
+<body>
+    
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <div>
+                    <img src="assets/img/Logo-white.png" alt="" class="logosystem">
+                </div>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li>
+                    <a href="#perfilSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-user"></i> Mi perfil</a>
+                    <ul class="collapse list-unstyled" id="perfilSubmenu">
+                        <li>
+                            <a href="#">Datos Generales</a>
+                        </li>
+                        <li>
+                            <a href="#">Mis Tarjetas</a>
+                        </li>
+                        <li>
+                            <a href="#">Mis Reservaciones</a>
+                        </li>
+                        <li>
+                            <a href="#">Mis Compras</a>
+                        </li>
+                        <li>
+                            <a href="#">Mis Servicios</a>
+                        </li>
+                        <li>
+                            <a href="#">Mis Promociones</a>
+                        </li>
+                        <li>
+                            <a href="#">Mis Boletos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-compass"></i> Explorar</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-tag"></i> Promociones</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                 <a href="#" class="article"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid btnmenu">
+                    <button type="button" id="sidebarCollapse" class="btn btn-light butmenumargen">
+                        <i class="fas fa-bars"></i>
+                        <span>Menú</span>
+                    </button>
+                    <button type="button" id="explorar" class="btn btn-light butmenumargen">
+                        <i class="fas fa-compass"></i>
+                        <span>Explorar</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+
+        
+        <!-- ======= Breadcrumbs ======= -->
+        <section class="breadcrumbs">
+            <div class="container">
+
+                <div class="d-flex justify-content-between align-items-center">
+
+                    <ol>
+                        <li><a href="#" class="linkregresar"><i class="fas fa-chevron-left"></i> Regresar</a></li>
+
+                    </ol>
+                </div>
+
+            </div>
+        </section><!-- End Breadcrumbs -->
+
+        
+        <div class="container">
+
+            <!--inicio busquedad -->
+            
+            <div class="row barrabusqueda">
+                
+                <div class="col-md-12">
+                    <h4 class="titlebarra">Encontrarás todo para iniciar tu aventura</h4>
+                </div>
+                
+                <div class="form-group col-md-12">
+                <label for="exampleFormControlInput1">Buscar:</label>
+                </div>
+
+                <div class="form-group col-md-9">
+                <input type="text" class="form-control bordecol" id="exampleFormControlInput1" placeholder="Buscar...">
+                </div>
+
+                <div class="form-group col-md-3">
+                <button type="button" class="col-12 btn btn-primary btnnormal">Buscar</button>
+                </div>
+                
+            </div>
+            
+            <!--fin busquedad -->
+
+            <!-- inicio iconos acceso directos -->
+            <div class="row">
+                
+                
+                    <div class="icoboxx">
+                    <a href="#">
+                        <span><i class="fas fa-hotel"></i></span>
+                        <div>
+                        <h6 class="textboxx">Hoteles</h6>
+                        </div>
+                    </a>
+                    </div>
+                
+                    <div class="icoboxx">
+                    <a href="#">
+                        <span><i class="fas fa-utensils"></i></span>
+                        <div>
+                        <h6 class="textboxx">Restaurantes</h6>
+                        </div>
+                    </a>
+                    </div>
+                
+                    <div class="icoboxx">
+                    <a href="#">
+                        <span><i class="fas fa-glass-martini"></i></span>
+                        <div>
+                        <h6 class="textboxx">Bares</h6>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="icoboxx">
+                    <a href="#">
+                        <span><i class="fas fa-tag"></i></span>
+                        <div>
+                        <h6 class="textboxx">Promociones</h6>
+                        </div>
+                    </a>
+                    </div>
+                
+                    <div class="icoboxx">
+                    <a href="#">
+                        <span><i class="fas fa-address-card"></i></span>
+                        <div>
+                        <h6 class="textboxx">Consulados</h6>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="icoboxx">
+                    <a href="#">
+                        <span><i class="fas fa-church"></i></span>
+                        <div>
+                        <h6 class="textboxx">Religioso</h6>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="icoboxx">
+                    <a href="#">
+                        <span><i class="fas fa-bus"></i></span>
+                        <div>
+                        <h6 class="textboxx">Transporte</h6>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="icoboxx">
+                    <a href="#">
+                        <span><i class="fas fa-ticket-alt"></i></span>
+                        <div>
+                        <h6 class="textboxx">Eventos</h6>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="icoboxx">
+                    <a href="#">
+                        <span><i class="fas fa-sun"></i></span>
+                        <div>
+                        <h6 class="textboxx">Parques</h6>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="icoboxx">
+                    <a href="#">
+                        <span><i class="fas fa-parking"></i></span>
+                        <div>
+                        <h6 class="textboxx">Parking</h6>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="icoboxx">
+                    <a href="#">
+                        <span><i class="fas fa-stethoscope"></i></span>
+                        <div>
+                        <h6 class="textboxx">Salud</h6>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="icoboxx">
+                    <a href="#">
+                        <span><i class="fas fa-golf-ball"></i></span>
+                        <div>
+                        <h6 class="textboxx">Golf</h6>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="icoboxx">
+                    <a href="#">
+                        <span><i class="fas fa-archway"></i></span>
+                        <div>
+                        <h6 class="textboxx">Museum</h6>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="icoboxx">
+                    <a href="#">
+                        <span><i class="fas fa-shopping-basket"></i></span>
+                        <div>
+                        <h6 class="textboxx">Mercados</h6>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="icoboxx">
+                    <a href="#">
+                        <span><i class="fas fa-shopping-bag"></i></span>
+                        <div>
+                        <h6 class="textboxx">Malls</h6>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="icoboxx">
+                    <a href="#">
+                        <span><i class="fas fa-handshake"></i></span>
+                        <div>
+                        <h6 class="textboxx">Servicios</h6>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="icoboxx">
+                    <a href="#">
+                        <span><i class="fas fa-heart"></i></span>
+                        <div>
+                        <h6 class="textboxx">Romance</h6>
+                        </div>
+                    </a>
+                    </div>
+                    
+                
+            </div>
+            <!--fin iconos acceso directos -->
+
+
+            <!-- inicio promociones -->
+            <div class="contenedor">
+                <div class="col-md-12" style="margin-top: 10px;">
+                    <h4 class="titlebarra">Promociones para ti</h4>
+                    <a href="#">Ver todas las promociones <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <div class="contenido-principal">
+                    <div class="contenido-principal__contenedor">
+                    <!-- Promociones -->
+                    <div class="carousel">
+                        <div class="carousel__contenedor">
+                            <button aria-label="Anterior" class="carousel__anterior" id="ant-promo">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+            
+                            <div class="carousel__lista" id="promocionesprincipal">
+                                <div class="carousel__elemento">
+                                    <div class="promomargen">
+                                    <img src="assets/img/promo1.png" alt="Promociones" class="promoprincipal">
+                                    <button class="col-12 btn-promo">Ver promoción</button>
+                                    </div>
+                                </div>
+                                <div class="carousel__elemento">
+                                    <div class="promomargen">
+                                    <img src="assets/img/promo2.jfif" alt="Promociones"  class="promoprincipal">
+                                    <button class="col-12 btn-promo">Ver promoción</button>
+                                    </div>
+                                </div>
+                                <div class="carousel__elemento">
+                                    <div class="promomargen">
+                                    <img src="assets/img/promo3.jpg" alt="Promociones"  class="promoprincipal">
+                                    <button class="col-12 btn-promo">Ver promoción</button>
+                                    </div>
+                                </div>
+                                <div class="carousel__elemento">
+                                    <div class="promomargen">
+                                    <img src="assets/img/promo1.png" alt="Promociones"  class="promoprincipal">
+                                    <button class="col-12 btn-promo">Ver promoción</button>
+                                    </div>
+                                </div>
+                
+                                <div class="carousel__elemento">
+                                    <div class="promomargen">
+                                    <img src="assets/img/promo2.jfif" alt="Empire State Building"  class="promoprincipal">
+                                    <button class="col-12 btn-promo">Ver promoción</button>
+                                    </div>
+                                </div>
+                                <div class="carousel__elemento">
+                                    <div class="promomargen">
+                                    <img src="assets/img/300x200.png" alt="Promociones"  class="promoprincipal">
+                                    <button class="col-12 btn-promo">Ver promoción</button>
+                                    </div>
+                                </div>
+                                <div class="carousel__elemento">
+                                    <div class="promomargen">
+                                    <img src="assets/img/600x400.png" alt="Promociones"  class="promoprincipal">
+                                    <button class="col-12 btn-promo">Ver promoción</button>
+                                    </div>
+                                </div>
+                                <div class="carousel__elemento">
+                                    <div class="promomargen">
+                                    <img src="assets/img/800x600.png" alt="Promociones"  class="promoprincipal">
+                                    <button class="col-12 btn-promo">Ver promoción</button>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <button aria-label="Siguiente" class="carousel__siguiente" id="sig-promo">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+            
+                        <div role="tablist" class="carousel__indicadores" id="indicadorespromo"></div>
+                    </div>
+                    <!--fin Promociones -->
+                    </div>
+                </div>
+            </div>
+            <!-- fin promociones -->
+
+
+
+
+
+
+        </div>
+        
+    </div>
+
+    <div class="overlay"></div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark">
+
+        <div class="footercolor">
+            <div class="container">
+        
+            <!-- Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+        
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                <h6 class="mb-0">Visita nuestras redes sociales </h6>
+                    <!-- Facebook -->
+                    <a href="#" class="fb-ic">
+                        <i class="fab fa-facebook-f white-text mr-4"> </i>
+                    </a>
+                    <!-- Twitter -->
+                    <a href="#" class="tw-ic">
+                        <i class="fab fa-twitter white-text mr-4"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a href="#" class="ins-ic">
+                        <i class="fab fa-instagram white-text"> </i>
+                    </a>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
+        
+                <img src="assets/img/Logo-white.png" alt="" class="img-fluid" style="height: 80px;" />
+        
+                </div>
+                <!-- Grid column -->
+        
+            </div>
+            <!-- Grid row-->
+        
+            </div>
+        </div>
+        
+        
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright 
+            <a href="https://mdbootstrap.com/"> Aventure by Totaltech</a>
+        </div>
+        <!-- Copyright -->
+        
+    </footer>
+    <!-- Footer -->
+
+
+    <!-- jQuery JS-->
+   <script src="assets/jquery/jquery-3.5.1.js"></script>
+    
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="assets/bootstrap-4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+   <!-- carrusel promociones -->
+   <script src="assets/js/promociones.js"></script>
+   <script src="assets/js/glider.min.js"></script>
+
+
+    <!-- menu sidebar js -->
+    <script async src="assets/js/menu.js"></script>
+
+ 
+ 
+	
+
+
+
+</body>
+
+</html>

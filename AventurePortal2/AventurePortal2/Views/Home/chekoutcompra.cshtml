@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Aventure</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/bootstrap-4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/jquery/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="assets/aos/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="assets/select2/select2.css">
+
+    <!-- Fotorama -->
+    <link href="assets/fotorama/fotorama.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <div>
+                    <img src="assets/img/Logo-white.png" alt="" class="logosystem">
+                </div>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fas fa-home"></i>
+                        Home</a>
+                </li>
+                <li>
+                    <a href="#perfilSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                            class="fas fa-user"></i> Mi perfil</a>
+                    <ul class="collapse list-unstyled" id="perfilSubmenu">
+                        <li>
+                            <a href="#">Datos Generales</a>
+                        </li>
+                        <li>
+                            <a href="#">Mis Tarjetas</a>
+                        </li>
+                        <li>
+                            <a href="#">Mis Reservaciones</a>
+                        </li>
+                        <li>
+                            <a href="#">Mis Compras</a>
+                        </li>
+                        <li>
+                            <a href="#">Mis Servicios</a>
+                        </li>
+                        <li>
+                            <a href="#">Mis Promociones</a>
+                        </li>
+                        <li>
+                            <a href="#">Mis Boletos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-compass"></i> Explorar</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-tag"></i> Promociones</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="#" class="article"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid btnmenu">
+                    <button type="button" id="sidebarCollapse" class="btn btn-light butmenumargen">
+                        <i class="fas fa-bars"></i>
+                        <span>Menú</span>
+                    </button>
+                    <button type="button" id="explorar" class="btn btn-light butmenumargen">
+                        <i class="fas fa-compass"></i>
+                        <span>Explorar</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+
+        <!-- ======= Breadcrumbs ======= -->
+        <section class="breadcrumbs">
+            <div class="container">
+
+                <div class="d-flex justify-content-between align-items-center">
+
+                    <ol>
+                        <li><a href="#" class="linkregresar"><i class="fas fa-chevron-left"></i> Regresar</a></li>
+
+                    </ol>
+                </div>
+
+            </div>
+        </section><!-- End Breadcrumbs -->
+
+        <div class="container">
+
+            <div class="col-md-12">
+                <h1>Datos de la compra</h1>
+                <h6>Revisa los detalles de tu compra</h6>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div class="row">
+
+                        <!-- para compra de articulos fisicos -->
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="assets/img/300x300.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-8">
+                                                <h4>Articulo nombre</h4> 
+                                                <h4>$600.00</h4>
+                                                <h6>Disponibles: 40</h5>
+                                        </div>
+
+                                        <div class="form-group col-md-12">
+                                            <label for="exampleFormControlInput1">Cantidad:</label>
+                                        </div>
+                                        <div class="form-group col-md-8">
+                                            <input type="text" class="form-control bordecol"
+                                                id="exampleFormControlInput1" placeholder="Ejemplo: 5">
+                                        </div>
+
+                                        <div class="form-group col-md-4">
+                                            <a class="btn btnnormal" href="#" role="button"> Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="assets/img/300x300.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-8">
+                                                <h4>Articulo nombre</h4> 
+                                                <h4>$600.00</h4>
+                                                <h6>Disponibles: 40</h5>
+                                        </div>
+
+                                        <div class="form-group col-md-12">
+                                            <label for="exampleFormControlInput1">Cantidad:</label>
+                                        </div>
+                                        <div class="form-group col-md-8">
+                                            <input type="text" class="form-control bordecol"
+                                                id="exampleFormControlInput1" placeholder="Ejemplo: 5">
+                                        </div>
+
+                                        <div class="form-group col-md-4">
+                                            <a class="btn btnnormal" href="#" role="button"> Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="assets/img/300x300.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-8">
+                                                <h4>Articulo nombre</h4> 
+                                                <h4>$600.00</h4>
+                                                <h6>Disponibles: 40</h5>
+                                        </div>
+
+                                        <div class="form-group col-md-12">
+                                            <label for="exampleFormControlInput1">Cantidad:</label>
+                                        </div>
+                                        <div class="form-group col-md-8">
+                                            <input type="text" class="form-control bordecol"
+                                                id="exampleFormControlInput1" placeholder="Ejemplo: 5">
+                                        </div>
+
+                                        <div class="form-group col-md-4">
+                                            <a class="btn btnnormal" href="#" role="button"> Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- para compra de boletos -->
+                        <div class="col-md-12" hidden>
+
+                            <div class="col-md-12">
+                                <img src="assets/img/canchaprueba.jpg" alt="" class="img-fluid">
+                            </div>
+
+                            <!-- asientos sencillos -->
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h4><i class="fas fa-chair"></i> Cancha A</h4>
+                                            <p>Asientos precio Exclusivo Aventure</p>
+                                            <h6>Disponibles: 40</h5>
+                                                <h6>Zona: la zona</h5>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h4> $600.00</h4>
+                                        </div>
+
+
+                                        <div class="form-group col-md-12">
+                                            <label for="exampleFormControlInput1">Cantidad:</label>
+                                        </div>
+                                        <div class="form-group col-md-8">
+                                            <input type="text" class="form-control bordecol"
+                                                id="exampleFormControlInput1" placeholder="Ejemplo: 5">
+                                        </div>
+
+                                        <div class="form-group col-md-4">
+                                            <a class="btn btnnormal" href="#" role="button"> Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- asientos detallados -->
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h4><i class="fas fa-chair"></i> Cancha A</h4>
+                                            <p>Asientos precio Exclusivo Aventure</p>
+                                            <h6>Disponibles: 40</h5>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h4> $600.00</h4>
+                                        </div>
+
+                                        <div class="form-group col-12">
+                                            <label for="exampleFormControlSelect1">Buscar Asientos:</label>
+                                            <select class="js-example-disabled-results form-control"
+                                                id="buscarasientos">
+                                                <option value="1">A51</option>
+                                                <option value="2">A1009</option>
+                                                <option value="3">A34</option>
+                                                <option value="4">A89</option>
+                                                <option value="5">A10</option>
+                                            </select>
+                                        </div>
+
+
+                                        <div class="col-md-12">
+                                            <label for="exampleFormControlInput1">Selecciona tus asientos:</label>
+                                        </div>
+
+                                        <span class="asiento">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                    value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox1">A50</label>
+                                            </div>
+                                        </span>
+
+                                        <span class="asiento">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                    value="option2">
+                                                <label class="form-check-label" for="inlineCheckbox1">A51</label>
+                                            </div>
+                                        </span>
+
+                                        <span class="asiento">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                    value="option3">
+                                                <label class="form-check-label" for="inlineCheckbox1">A52</label>
+                                            </div>
+                                        </span>
+
+                                        <span class="asiento">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                    value="option4">
+                                                <label class="form-check-label" for="inlineCheckbox1">A53</label>
+                                            </div>
+                                        </span>
+
+                                        <span class="asiento">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                    value="option5">
+                                                <label class="form-check-label" for="inlineCheckbox1">A54</label>
+                                            </div>
+                                        </span>
+
+                                        <span class="asiento">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                    value="option6">
+                                                <label class="form-check-label" for="inlineCheckbox1">A55</label>
+                                            </div>
+                                        </span>
+
+
+                                        <div class="form-group col-md-12">
+                                            <a class="btn btnnormal" href="#" role="button"> Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- para tipo resevaciones/tours  -->
+                        <div class="col-md-12" hidden>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label for="exampleFormControlInput1">Cantidad:</label>
+                                    <input type="text" class="form-control bordecol" id="exampleFormControlInput1"
+                                        placeholder="Ejemplo: 5">
+                                </div>
+
+
+                                <div class="form-group col-md-6">
+                                    <label for="exampleFormControlInput1">Del dÍa:</label>
+                                    <div class="input-group">
+                                        <input class="form-control bordecol fechareservar" id="diainicial">
+                                        <div class="input-group-append" onclick='$("#diainicial").datepicker("show")'>
+                                            <div class="input-group-text iconform"><i class="fas fa-calendar-day"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group col-md-6">
+                                    <label for="exampleFormControlInput1">Al dÍa:</label>
+                                    <div class="input-group">
+                                        <input class="form-control bordecol fechareservar" id="diafinal">
+                                        <div class="input-group-append" onclick='$("#diafinal").datepicker("show")'>
+                                            <div class="input-group-text iconform"><i class="fas fa-calendar-day"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <a class="btn btnnormal" href="#" role="button"> Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+
+
+
+
+
+                        
+
+
+                        
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+
+                    <!-- listado detalle de las compras -->
+                    <div class="col-md-12">
+                        <div class="listadocompras">
+                        <h4><i class="fas fa-list-ul"></i> Listado de compras</h4>
+                       
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <span class="listcompra">Nombre articulo/ promocion/ servicio/ tour</span>
+                                        <span class="listcompradetalle">Cantidad:</span>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="btn btn-light" href="#" role="button"> <span class="listcompradetalle">Eliminar</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <span class="listcompra">Nombre articulo/ promocion/ servicio/ tour</span>
+                                        <span class="listcompradetalle">Cantidad:</span>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="btn btn-light" href="#" role="button"> <span class="listcompradetalle">Eliminar</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <span class="listcompra">Nombre articulo/ promocion/ servicio/ tour</span>
+                                        <span class="listcompradetalle">Cantidad:</span>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="btn btn-light" href="#" role="button"> <span class="listcompradetalle">Eliminar</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 mrbot" id="divmetodosdeentrega">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link" id="tabdomicilio" href="#divdomicilio">
+                                    <i class="fas fa-shipping-fast"></i> Envío a domicilio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#divtienda" id="tabtienda">
+                                    <i class="fas fa-store-alt"></i> Recoger en tienda</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!-- entrega a domicilio -->
+                    <div class="col-md-12" id="divdomicilio">
+                        <div class="scrollenvio">
+                            <h5>Ingresa tus datos de envío</h5>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Nombre:</label>
+                                <input type="text" class="form-control bordecol" id="exampleFormControlInput1"
+                                    placeholder="Ejemplo: Laura Sanchez Lara">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Teléfono celular:</label>
+                                <input type="text" class="form-control bordecol" id="exampleFormControlInput1"
+                                    placeholder="Ejemplo: 998398299102">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Calle:</label>
+                                <input type="text" class="form-control bordecol" id="exampleFormControlInput1"
+                                    placeholder="Ejemplo: Blvd. Benito Juarez">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Número interior:</label>
+                                <input type="text" class="form-control bordecol" id="exampleFormControlInput1"
+                                    placeholder="Ejemplo: 0039">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Número exterior:</label>
+                                <input type="text" class="form-control bordecol" id="exampleFormControlInput1"
+                                    placeholder="Ejemplo: 0039">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Colonia:</label>
+                                <input type="text" class="form-control bordecol" id="exampleFormControlInput1"
+                                    placeholder="Ejemplo: 0039">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Código postal:</label>
+                                <input type="text" class="form-control bordecol" id="exampleFormControlInput1"
+                                    placeholder="Ejemplo: 0039">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Municipio / Delegación:</label>
+                                <input type="text" class="form-control bordecol" id="exampleFormControlInput1"
+                                    placeholder="Ejemplo: 0039">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Estado:</label>
+                                <input type="text" class="form-control bordecol" id="exampleFormControlInput1"
+                                    placeholder="Ejemplo: 0039">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Referencia:</label>
+                                <textarea class="form-control bordecol" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- entrega en tienda -->
+                    <div class="col-md-12" id="divtienda">
+                    <div class="scrollenvio">
+                        <h5>Seleccion la tienda</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="col-md-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            Sucursal 1
+                                        </label>
+                                    </div>
+                                    <span class="listcompradetalle">Av. Paseo Punto Sur 235, Tlajomulco de Zuñiga, Jalisco, México.</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="col-md-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option2" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            Sucursal 2
+                                        </label>
+                                    </div>
+                                    <span class="listcompradetalle">Av. Paseo Punto Sur 235, Tlajomulco de Zuñiga, Jalisco, México.</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="col-md-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option3" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            Sucursal 3
+                                        </label>
+                                    </div>
+                                    <span class="listcompradetalle">Av. Paseo Punto Sur 235, Tlajomulco de Zuñiga, Jalisco, México.</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="col-md-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option4" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            Sucursal 4
+                                        </label>
+                                    </div>
+                                    <span class="listcompradetalle">Av. Paseo Punto Sur 235, Tlajomulco de Zuñiga, Jalisco, México.</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="col-md-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option5" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            Sucursal 5
+                                        </label>
+                                    </div>
+                                    <span class="listcompradetalle">Av. Paseo Punto Sur 235, Tlajomulco de Zuñiga, Jalisco, México.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+
+                </div>
+
+                
+                <div class="col-lg-12">
+                    <div class="row">
+                    <!-- codigo promocional se oculta esta parte cuando se compra una promocion -->
+                    <div class="col-md-12">
+                        <hr>
+                        <div class="row">
+                        <div class="form-group col-md-12">
+                            <label for="exampleFormControlInput1">Código promocional:</label>
+                        </div>
+                        <div class="form-group col-md-8">
+                            <input type="text" class="form-control bordecol" id="exampleFormControlInput1"
+                                placeholder="Ejemplo: M30VACACIONES">
+                            <small class="form-text text-muted">
+                                En caso de tener un código promocional, agregalo aquí.
+                            </small>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <a class="btn btnnormal" href="#" role="button"> Agregar</a>
+                        </div>
+                        </div>
+                    </div>
+
+
+                    <!-- total a pagar de la compra -->
+                    <div class="col-md-12">
+                        <hr class="col-12">
+                        <h4>TOTAL: $000.000 MXN</h4>
+                        <hr class="col-12">
+                    </div>
+
+
+
+                    <!-- metodos de pago -->
+                    <div class="col-md-12 mrbot" id="divmetodosdepagocompra">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link" id="tabtarjeta" href="#divtarjetanueva"><i
+                                        class="fas fa-credit-card"></i> Tarjeta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#divspei" id="tabspei"><i class="fas fa-dollar-sign"></i>
+                                    Spei</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#divefectivo" id="tabefectivo"><i
+                                        class="fas fa-money-bill-wave"></i> Efectivo</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tarjeta - si no tiene agregada ninguna tarjeta-->
+                    <div class="col-md-12" id="divtarjetanueva">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5>Pago con tarjeta</h5>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="exampleFormControlInput1">Número de tarjeta:</label>
+                                <input type="text" class="form-control bordecol" id="exampleFormControlInput1"
+                                    placeholder="Ingresa el numero de la tarjeta">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="exampleFormControlInput1">Nombre del titular:</label>
+                                <input type="text" class="form-control bordecol" id="exampleFormControlInput1"
+                                    placeholder="Ingresa el titular de la tarjeta">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="exampleFormControlInput1">Fecha Vencimiento:</label>
+                                <input type="text" class="form-control bordecol" id="exampleFormControlInput1"
+                                    placeholder="Ingresa la fecha de vencimiento">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="exampleFormControlInput1">CCV:</label>
+                                <input type="text" class="form-control bordecol" id="exampleFormControlInput1"
+                                    placeholder="Ingresa el código de seguridad">
+                            </div>
+                            <div class="col-md-12">
+                                <small class="form-text text-muted">
+                                    Tarjetas de Crédito y Débito.
+                                </small>
+                                <img src="assets/img/tarjetas.png" alt="" class="img-fluid">
+                            </div>
+                            <hr class="col-md-12">
+                        </div>
+                    </div>
+
+                    <!-- Listado de tarjetas - cuando ya agrego tarjetas selecciona con cual pagar-->
+                    <div class="col-md-12" id="divlistadotarjetas" hidden>
+                        <div class="row">
+                           
+
+                            <div class="card col-md-12">
+                            <div class="card-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Juan Moran Lara
+                                    </label>
+                                </div>
+                                <small class="form-text text-muted">
+                                    Tarjeta terminación: 2344
+                                </small>
+                            </div>
+                            </div>
+
+                            <div class="card col-md-12">
+                            <div class="card-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option2" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Leo Lopez Lopez
+                                    </label>
+                                </div>
+                                <small class="form-text text-muted">
+                                    Tarjeta terminación: 0923
+                                </small>
+                            </div>
+                            </div>
+
+                            <div class="card col-md-12">
+                            <div class="card-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option3" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Karla Moran Lara
+                                    </label>
+                                </div>
+                                <small class="form-text text-muted">
+                                    Tarjeta terminación: 8834
+                                </small>
+                            </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+
+                    <!-- Transferencia -->
+                    <div class="col-md-12" id="divspei">
+                        <div class="col-md-12">
+                            <h5>Pago con transferencia</h5>
+                        </div>
+                        <div class="alert alert-secondary" role="alert">
+                            <ul>
+                                <li>Ingresa a tu banca en línea.</li>
+                                <li>Agrega / Selecciona la cuenta para realizar la transferencia.</li>
+                                <li>Efectúa la transferencia para completar la compra.</li>
+                            </ul>
+                        </div>
+                        <hr class="col-md-12">
+                    </div>
+
+                    <!-- Efectivo -->
+                    <div class="col-md-12" id="divefectivo">
+                        <div class="col-md-12">
+                            <h5>Pago en efectivo</h5>
+                        </div>
+                        <div class="alert alert-secondary" role="alert">
+                            <ul>
+                                <li>Al completar la compra se genera un código de barras.</li>
+                                <li>Realiza tu pago en tu sucursal más cercana.</li>
+                                <li>Al realizar tu pago el sistema se actualiza automáticamente.</li>
+                            </ul>
+                        </div>
+                        <hr class="col-md-12">
+                    </div>
+
+
+
+
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <small class="form-text text-muted">
+                                    Transacciones realizadas vía:
+                                </small></div>
+                            <div class="col-md-12"><img src="assets/img/openpay.png" alt="" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-4"><img src="assets/img/security.png" alt="" class="img-fluid"
+                                    style="margin-left: 80%;" /></div>
+                            <div class="col-8">
+                                <small class="form-text text-muted">
+                                    Tus pagos se realizan de forma segura con encriptación de 256 bits.
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="col-md-12">
+                    <div class="col-md-12">
+                        <a class="btn btn-lg btnnormal col-12" href="#" role="button">Realizar pago</a>
+                    </div>
+                    <hr class="col-md-12">
+                </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+    <div class="overlay"></div>
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark">
+
+    <div class="footercolor">
+      <div class="container">
+  
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+  
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0">Visita nuestras redes sociales </h6>
+                <!-- Facebook -->
+                <a href="#" class="fb-ic">
+                    <i class="fab fa-facebook-f white-text mr-4"> </i>
+                </a>
+                <!-- Twitter -->
+                <a href="#" class="tw-ic">
+                    <i class="fab fa-twitter white-text mr-4"> </i>
+                </a>
+                <!--Instagram-->
+                <a href="#" class="ins-ic">
+                    <i class="fab fa-instagram white-text"> </i>
+                </a>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+  
+            <img src="assets/img/Logo-white.png" alt="" class="img-fluid" style="height: 80px;" />
+  
+          </div>
+          <!-- Grid column -->
+  
+        </div>
+        <!-- Grid row-->
+  
+      </div>
+    </div>
+  
+   
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright 
+      <a href="https://mdbootstrap.com/"> Aventure by Totaltech</a>
+    </div>
+    <!-- Copyright -->
+  
+    </footer>
+    <!-- Footer -->
+
+
+
+
+
+    <!-- jQuery JS - Slim version (=without AJAX) -->
+    <script src="assets/jquery/jquery-3.5.1.js"></script>
+
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/bootstrap-4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- Animaciones JS -->
+    <script src="assets/aos/aos.js"></script>
+
+    <!--datetimepicker -->
+    <script src="assets/jquery/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="assets/jquery/jquery-ui-1.12.1/datepicker-es.js"></script>
+
+    <!-- Fotorama -->
+    <script src="assets/fotorama/fotorama.js"></script>
+
+    <script async src="assets/js/menu.js"></script>
+    <script async src="assets/select2/select2.min.js"></script>
+
+
+    <script>
+
+        function aos_init() {
+            AOS.init({
+                duration: 1000,
+                once: true
+            });
+        }
+        $(window).on('load', function () {
+            aos_init();
+        });
+
+
+        $(function () {
+            $("#buscarasientos").select2({
+
+            });
+
+            $.datepicker.setDefaults( $.datepicker.regional[ "es" ] );
+            
+            $(".fechareservar").datepicker({
+                dateFormat: "dd-mm-yy",
+            });
+
+            $("#tabtarjeta").addClass('selectmetodo');
+            $("#divspei").hide();
+            $("#divefectivo").hide();
+            $("#tabdomicilio").addClass('selectmetodo');
+            $("#divtienda").hide();
+        });
+
+
+        $("#tabdomicilio").click(function () {
+            $(".selectmetodo").removeClass('selectmetodo');
+            $("#tabdomicilio").addClass('selectmetodo');
+            $("#divdomicilio").show();
+            $("#divtienda").hide();
+        });
+
+        $("#tabtienda").click(function () {
+            $(".selectmetodo").removeClass('selectmetodo');
+            $("#tabtienda").addClass('selectmetodo');
+            $("#divdomicilio").hide();
+            $("#divtienda").show();
+        });
+
+
+        $("#tabtarjeta").click(function () {
+            $(".selectmetodo").removeClass('selectmetodo');
+            $("#tabtarjeta").addClass('selectmetodo');
+            $("#divtarjetanueva").show();
+            $("#divspei").hide();
+            $("#divefectivo").hide();
+        });
+
+        $("#tabspei").click(function () {
+            $(".selectmetodo").removeClass('selectmetodo');
+            $("#tabspei").addClass('selectmetodo');
+            $("#divtarjetanueva").hide();
+            $("#divspei").show();
+            $("#divefectivo").hide();
+        });
+
+        $("#tabefectivo").click(function () {
+            $(".selectmetodo").removeClass('selectmetodo');
+            $("#tabefectivo").addClass('selectmetodo');
+            $("#divtarjetanueva").hide();
+            $("#divspei").hide();
+            $("#divefectivo").show();
+        });
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
