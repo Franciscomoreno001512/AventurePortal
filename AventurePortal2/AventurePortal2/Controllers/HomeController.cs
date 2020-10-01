@@ -13,18 +13,102 @@ namespace AventurePortal2.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult chekoutcompra()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult compradetalle()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
+
+        public ActionResult consultaproveedor()
+        {
+            return View();
+        }
+
+        public ActionResult datosgenerales()
+        {
+            return View();
+        }
+
+        public ActionResult evento()
+        {
+            return View();
+        }
+
+        public ActionResult login()
+        {
+            return View();
+        }
+
+        public ActionResult misboletos()
+        {
+            return View();
+        }
+
+
+        public ActionResult miscompras()
+        {
+            return View();
+        }
+
+        public ActionResult mispromociones()
+        {
+            return View();
+        }
+
+        public ActionResult misreservaciones()
+        {
+            return View();
+        }
+
+        public ActionResult misservicios()
+        {
+            return View();
+        }
+
+        public ActionResult mistarjetas()
+        {
+            return View();
+        }
+
+        public ActionResult principal()
+        {
+            return View();
+        }
+
+        public ActionResult productosfisicos()
+        {
+            return View();
+        }
+
+        public ActionResult promocion()
+        {
+            return View();
+        }
+
+        public ActionResult registro()
+        {
+            return View();
+        }
+
+        public ActionResult resultados()
+        {
+            return View();
+        }
+
+        public ActionResult terminos()
+        {
+            return View();
+        }
+
+
+
+
+
+
+
     }
 }
